@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KT_IoT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header" >
+            <h1 class="kt" style="color: red;">
+                KIỂM TRA
+            </h1>
+
+            <div class="cb">
+                <div>
+                    <h1 style="color: balck">T:
+                        
+                        <span style="color: red;" id="nd">None</span>
+                    </h1>
+                </div>
+                <div>
+                    <h1 style="color: balck">H:
+                        <span style="color: aqua;" id="da">None</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+
+        <div style="background-color: chartreuse; font-size: 22px; text-align: center;">phòng khách</div>
+        <div class="pk">
+            <div class="slot">
+                
+                <img id="dpk_img" src="./img/bulb_off.png">
+                <div>
+                    <strong>ĐÈN</strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div>
+                    <div>
+                        <button id="dpk_on" style="background-color: green; font-weight: bold;">ON</button>
+                        <button id="dpk_off" style="background-color: red; font-weight: bold;">OFF</button>
+                    </div>	
+                </div>
+            </div>
+
+            <div class="slot">
+                
+                <img id="qpk_img" src="./img/fan_off.png">
+                <div>
+                    <strong>QUẠT</strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div>
+                    <div>
+                        <button id="qpk_on" style="background-color: green; font-weight: bold;">ON</button>
+                        <button id="qpk_off" style="background-color: red; font-weight: bold;">OFF</button>
+                    </div>	
+                </div>
+            </div>
+
+            <div class="slot">
+                <img id="mlpk_img" src="./img/aircon_off.png">
+                <div>
+                    <strong>MÁY LẠNH</strong>
+                    
+                </div>
+                <div>
+                    <div id="slider_mlpk_value">22</div>
+                    <input type="range" min="15" max="35" value="22" class="slider" id="slider_mlpk_id">
+                </div>
+            </div>
+        </div>
+ 
+        <div style="background-color: burlywood; font-size: 22px; text-align: center;">phòng ngủ</div>
+        <div class="pn">
+            <div class="slot">
+                
+                <img id="dpn_img" src="./img/bulb_off.png">
+                <div>
+                    <strong>ĐÈN</strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div>
+                    <div>
+                        <button id="dpn_on" style="background-color: green; font-weight: bold;">ON</button>
+                        <button id="dpn_off" style="background-color: red; font-weight: bold;">OFF</button>
+                    </div>	
+                </div>
+            </div>
+
+            <div class="slot">
+                
+                <img id="qpn_img" src="./img/fan_off.png">
+                <div>
+                    <strong>QUẠT</strong>
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div>
+                    <div>
+                        <button id="qpn_on" style="background-color: green; font-weight: bold;">ON</button>
+                        <button id="qpn_off" style="background-color: red; font-weight: bold;">OFF</button>
+                    </div>	
+                </div>
+            </div>
+
+        <div class="slot">
+            <img id="mlpn_img" src="./img/aircon_off.png">
+            <div>
+                <strong>MÁY LẠNH</strong>
+                
+            </div>
+            <div>
+                <div id="slider_mlpn_value">22</div>
+                <input type="range" min="15" max="35" value="22" class="slider" id="slider_mlpn_id">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+
+	<script src="control.js"></script>
+</body>
+</html>

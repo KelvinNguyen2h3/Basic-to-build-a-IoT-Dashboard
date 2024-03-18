@@ -1,0 +1,16 @@
+{
+  "cambien": {
+    "doam": "30%",
+    "nhietdo": "18*C"
+  },
+  "pk": {
+    "Den": "ON",
+    "Maylanh": "15",
+    "Quat": "ON"
+  },
+  "pn": {
+    "Den": "OFF",
+    "Maylanh": "30",
+    "Quat": "OFF"
+  }
+}

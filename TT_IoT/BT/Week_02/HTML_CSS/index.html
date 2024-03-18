@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- phần head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - CSS</title>
+    <!-- sử dụng CSS Internal -->
+    <style>
+        h1 {
+            color:aquamarine
+        }
+    </style>
+    <!-- Sử dụng CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- phần body hiển thị trên web -->
+<body>
+    <div>
+        <!-- Các thẻ thông dụng -->
+        <!-- Các thẻ heading -->
+        <h1>Hello</h1>
+        <h2>Hello</h2>
+        <!-- thẻ paragraph -->
+        <!-- sử dụng CSS in-line -->
+        <p style="color: red">Nguyễn Văn Tèo</p>
+        <!-- image và thêm attribute-->
+        <img src="./img/on.png" width="30%" height="30%">
+        <!-- thẻ anchor -->
+        <a href="xnxx.com">A LINK</a>
+        <!-- list -->
+        <ul>
+            <li>Firebase</li>
+            <li>Thingspeak</li>
+            <li>Blynk</li>
+        </ul>
+        <!-- table -->
+        <table>
+            <thead>
+                <th>Tên</th>
+                <th>Loại</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8051</td>
+                    <td>MicroController</td>
+                </tr>
+                <tr>
+                    <td>8051</td>
+                    <td>MicroProcessor</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- input -->
+        <input type="text">
+        <input name="Hardware" type="radio">
+        <input name="Software" type="radio">
+        <!-- button -->
+        <button>Nút nhấn</button>
+        <!-- và thẻ div bao quanh tất cả -->
+    </div>
+
+
+        <!-- ID và class -->
+        <h3 id="first" class="heading" style="color:brown">heading</h3>
+        <h3 id="first" class="heading">heading</h3>
+        <h3 class="heading">heading</h3>
+        <h3 class>heading</h3>
+        <!-- kết luận ưu tiên -->
+        <!-- in-line 1000 id 100 class 10 tag 1-->
+        <!-- Equal Specificity -->
+        <h4 id="EqualSpecificity">HEADING</h4>
+        <!-- tag + id = 101 > tag = 1 nên HEADING màu đen -->
+        <div style="color: red">
+            <p>Inherited</p>
+        </div>
+        <!-- thẻ p ko đc style nhưng được thừa hưởng từ thẻ cha là div nên đỏ -->
+        <!-- important -->
+        <p id="important">quan trọng</p>
+
+
+        <!-- Absolue unit: Pixel(px) -->
+        <div class="box box1">box 1</div>
+        <!-- Padding -->
+        <div class="box box2">box 2 Padding</div>
+        <!-- Border -->
+        <div class="box box3">box 3 Border</div>
+        <!-- Margin -->
+        <div class="box box4">box 4 Margin</div>
+
+        <!-- background img -->
+        <div class="background"></div>
+</body>
+</html>

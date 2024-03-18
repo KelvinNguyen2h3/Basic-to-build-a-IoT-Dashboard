@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>bước 1</title>
+		<link rel="stylesheet" href="demo.css">
+	</head>
+
+	<body background="./img/background.png">
+		<h1 style="color: white;"> THỰC TẬP CƠ SỞ ỨNG DỤNG IOTs tuần 3</h1>
+
+
+		<div id="container">
+
+			<div class="row">
+				<div class="device">
+					<h2 style="color: black">LED status: <span id="status">OFF</span></h2>
+					<img id="d01_img" src="./img/light_bulb_off.png" alt="img" style="width:100%">
+					<p>ĐÈN 01</p>
+					<div>
+						<button type="button" id="d01_on" style="background-color: green; font-weight: bold;">ON</button>
+						<button type="button" id="d01_off" style="background-color: red; font-weight: bold;">OFF</button>
+					</div>									
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="device">
+					<img id="d02_img" src="./img/light_bulb_off.png" alt="img" style="width:100%">
+					<div id="sliderNgangValue"> 5</div>
+					<input type="range" min="0" max="10" value="5" class="slider" id="sliderNgangId">
+				</div>
+			</div>
+
+		</div>
+
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+		<script src="demo.js"></script>
+
+	</body>	
+
+</html>

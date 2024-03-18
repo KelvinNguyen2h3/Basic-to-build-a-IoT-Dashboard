@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>bước 3</title>
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body background="./img/background.png">
+		<h1 style="color: white;"> THỰC TẬP CƠ SỞ ỨNG DỤNG IOTs tuần 3</h1>
+		<div style="display: grid; grid-template-columns: 1fr 1fr;">
+			<h2 style="color: white">Nhiệt độ: <span style="color: red;" id="nhietdo">None</span> </h2>
+			<h2 style="color: white">Độ ẩm: <span style="color: blue" id="doam">None</span></h2></div>
+		<div id="container">
+			<div class="row"> <!-- ROW 01 -->
+				<div class="device">
+					<img id="d01_img" src="./img/light_bulb_off.png" alt="img" style="width:100%">
+					<p>ĐÈN 01</p>
+					<div>
+						<button id="d01_on" style="background-color: green; font-weight: bold;">ON</button>
+						<button id="d01_off" style="background-color: red; font-weight: bold;">OFF</button>
+					</div>									
+				</div>
+				<div class="device">
+					<img id="d02_img" src="./img/light_bulb_off.png" alt="img" style="width:100%">
+					<p>ĐÈN 02</p>
+					<div>
+						<button id="d02_on" style="background-color: green; font-weight: bold;">ON</button>
+						<button id="d02_off" style="background-color: red; font-weight: bold;">OFF</button>
+					</div>									
+				</div>
+			</div>
+			
+			<div class="row"> <!-- ROW 02 -->
+				<div class="device">
+					<img id="d03_img" src="./img/fan_off.png" alt="img" style="width:100%">
+					<p>QUẠT</p>
+					<div>
+						<button id="d03_on" style="background-color: green; font-weight: bold;">ON</button>
+						<button id="d03_off" style="background-color: red; font-weight: bold;">OFF</button>
+					</div>									
+				</div>
+				<div class="device">
+					<img id="d04_img" src="./img/aircon_off.png" alt="img" style="width:100%">
+					<p>MÁY LẠNH</p>
+					<div>
+						<button id="d04_on" style="background-color: green; font-weight: bold;">ON</button>
+						<button id="d04_off" style="background-color: red; font-weight: bold;">OFF</button>
+					</div>									
+				</div>
+			</div>
+		</div>
+
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+		<script src="control.js"></script>
+
+	</body>	
+
+</html>

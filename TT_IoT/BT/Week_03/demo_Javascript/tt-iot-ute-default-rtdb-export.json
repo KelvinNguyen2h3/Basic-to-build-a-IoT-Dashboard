@@ -1,0 +1,9 @@
+{
+  "TT_IoT": {
+    "BULB_01": "OFF",
+    "BULB_02": "OFF",
+    "BULB_03": "OFF",
+    "BULB_04": "OFF",
+    "Temp": 13
+  }
+}

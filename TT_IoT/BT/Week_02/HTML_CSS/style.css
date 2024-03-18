@@ -1,0 +1,80 @@
+h2 {
+    color:chartreuse;
+}
+
+/* Độ ưu tiên */
+#first {
+    color:blueviolet;
+}
+
+.heading {
+    color: green;
+}
+
+h3 {
+    color:blue;
+}
+
+/* Equal Sepcificity */
+h4 {
+    color:aqua;
+}
+
+h4#EqualSpecificity {
+    color:black;
+}
+
+/* Universal selector: chung, tất cả đối tượng */
+* {
+    font-size: large;
+}
+
+/* important */
+#important {
+    color:blue !important;
+    /* được gắn important */
+}
+#important {
+    color:red; 
+    /* dù được gắn red mới hơn nhưng vẫn ko đổi do ở trên blue được gắn important */
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    background-color:blue;
+}
+.box2 {
+    background-color: orange;
+    padding: 50px;
+}
+/* box2 thêm padding 50px trên dưới, trái phải nên tổng là 400x400 */
+.box3 {
+    background-color: black;
+    border: 50px;
+    border-style: dashed;
+    border-color: aquamarine;
+}
+/* box3 thêm border 50px, nét đứt, và màu aqua */
+.box4 {
+    background-color: blueviolet;
+    margin: 50px;
+}
+/* box4 thêm margin 50px, tức là cách các phần từ khác 50px trên dưới, trái phải */
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0, rgba(255,255,0,0.5),rgba(0,0,255,0.5)), url(./img/background.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    /* background-size: contain; */
+    background-size: cover;
+
+}
